@@ -1,6 +1,6 @@
 class Author:
-    def __init__(self, id, name, bio):
-        self.id = id
+    def __init__(self, author_id, name, bio):
+        self.author_id = author_id
         self.name = name
         self.bio = bio
 
@@ -25,4 +25,4 @@ class Author:
             print(f"ID: {author[0]}, Name: {author[1]}")
 
     def __str__(self):
-        return f"---AUTHOR---\nID Autora: {self.id}\nMeno: {self.name}\nBio: {self.bio}"
+        return f"---AUTHOR---\nID Autora: {self.author_id}\nMeno: {self.name}\nBio: {self.bio}"

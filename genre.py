@@ -1,6 +1,6 @@
 class Genre:
-    def __init__(self, id, name, description):
-        self.id = id
+    def __init__(self, genre_id, name, description):
+        self.genre_id = genre_id
         self.name = name
         self.bio = description
 
