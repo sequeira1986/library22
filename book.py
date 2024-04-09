@@ -29,8 +29,8 @@ class Book:
         print("Kniha bola vymazana")
 
     @staticmethod
-    def pocicaj_knihu(cursor, member_id, book_id):
-        cursor.execute("SELEC copies FROM books WHERE id= %s", book_id)
+    def pocicaj_knihu(cursor, member_id, id):
+        cursor.execute("SELEC copies FROM books WHERE id= %s", id)
         result = cursor.fetchone()[0]
         if result and result[0] > 0:
             # Book is available, update copies count and insert into loans table
