@@ -53,7 +53,6 @@ def aplikacia():
             genre_id = input("Vyberte ID žánru: ")
             Book.vloz_do_db(cursor, author_id, genre_id)
             conn.commit()
-
         elif choice == "4":
             Book.delete_book(cursor)
             conn.commit()
@@ -86,8 +85,6 @@ def aplikacia():
                     print(loan)
             else:
                 print("nie su pozicky")
-
-
         elif choice == "10":
 
             member_id = input("Member ID: ")
