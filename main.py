@@ -74,7 +74,8 @@ def aplikacia():
         elif choice == "8":
             member_id = input("Member ID: ")
             book_id = input("Book ID: ")
-            Book.return_book(cursor, member_id, book_id)
+            Book.return_book(cursor, member_id, book_id
+                             )
             conn.commit()
         elif choice == "9":
             member_id = input("Member ID: ")
